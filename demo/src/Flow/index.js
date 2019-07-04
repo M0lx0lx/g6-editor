@@ -17,10 +17,10 @@ const FlowPage = () => {
         </Col>
       </Row>
       <Row type="flex" className={styles.editorBd}>
-        <Col span={4} className={styles.editorSidebar}>
+        <Col span={3} className={styles.editorSidebar}>
           <FlowItemPanel />
         </Col>
-        <Col span={16} className={styles.editorContent}>
+        <Col span={17} className={styles.editorContent}>
           <Flow className={styles.flow} />
         </Col>
         <Col span={4} className={styles.editorSidebar}>

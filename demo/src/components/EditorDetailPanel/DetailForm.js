@@ -54,9 +54,9 @@ class DetailForm extends React.Component {
   renderEdgeShapeSelect = () => {
     return (
       <Select onChange={this.handleSubmit}>
-        <Option value="flow-smooth">Smooth</Option>
-        <Option value="flow-polyline">Polyline</Option>
-        <Option value="flow-polyline-round">Polyline Round</Option>
+        <Option value="flow-smooth">平滑</Option>
+        <Option value="flow-polyline">直角折线</Option>
+        <Option value="flow-polyline-round">圆角折线</Option>
       </Select>
     );
   };

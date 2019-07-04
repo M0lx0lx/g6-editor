@@ -1,5 +1,6 @@
 import React from 'react';
 import withGGEditorContext from '@common/context/GGEditorContext/withGGEditorContext';
+import styles from './index.less'
 
 class Item extends React.Component {
   constructor(props) {
@@ -33,7 +34,7 @@ class Item extends React.Component {
     const { src, shape, children } = this.props;
 
     return (
-      <div style={{ cursor: 'pointer' }} onMouseDown={this.handleMouseDown}>
+      <div style={{ cursor: 'move',padding: 5 }} className={styles.ele_drag} onMouseDown={this.handleMouseDown}>
         {src ? <img src={src} alt={shape} draggable={false} /> : children}
       </div>
     );
